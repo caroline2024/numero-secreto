@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+
+<script>
+//para criar uma função
+function pulaLinha() {
+	document.write("<br><br>");
+}
+function mostra(frase) {
+document.write(frase);
+pulaLinha();
+}
+//crair uma variável e prompt para criar um programa
+var vitorias = parseInt(prompt ("Entre com o número de vitórias."));
+
+//parseInt é para retornar numero
+var empates = parseInt(prompt("Entre com o número de empates."));
+
+var pontos = (vitorias * 3) + empates;
+
+mostra("O ponto do seu time é " + pontos);
+
+//se pontos maior 28
+if (pontos > 28) {
+mostra("Seu time está melhor do que o ano passado.");
+}
+
+//se pontos menor 28
+if (pontos < 28) {
+mostra("Seu time está pior do que o ano passado");
+}
+
+//se pontos igual 28
+if (pontos == 28){
+mostra("Seu time está igual do que o ano passado");
+}
+
+mostra("FIM")
+
+</script>
